@@ -16,20 +16,27 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-width: 50% !important;
 }
 
 .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* No spacing between buttons */
     margin-bottom: 20px;
 }
 
 .button-group button {
+    flex: 1; /* All buttons take equal space */
+    margin: 5px;
     background-color: #007BFF;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0; /* Remove any margin */
+    border-radius: 0; /* Remove rounded corners to align perfectly */
     cursor: pointer;
+
 }
 
 .button-group button:hover {
@@ -38,6 +45,7 @@ body {
 
 .links {
     display: none;
+    padding-left: 10%;
     margin-top: 20px;
     text-align: left;
 }
@@ -46,7 +54,7 @@ body {
     display: block;
     color: #007BFF;
     text-decoration: none;
-    margin: 5px 0;
+    margin: 5px 5px;
 }
 
 .links a:hover {
