@@ -1,8 +1,16 @@
+
 /* styles.css */
+
+*{
+    --bgBase: #272727; 
+    --floatBG: hsl(0, 0%, 49%);
+    --buttonC: rgb(131, 131, 131);
+}
+
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--bgBase);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,12 +19,13 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: var(--floatBG);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-width: 50% !important;
+    min-height: 50% !important;
 }
 
 .button-group {
@@ -29,7 +38,7 @@ body {
 .button-group button {
     flex: 1; /* All buttons take equal space */
     margin: 5px;
-    background-color: #007BFF;
+    background-color: var(--buttonC);
     color: #fff;
     border: 1px solid black;
     padding: 10px;
