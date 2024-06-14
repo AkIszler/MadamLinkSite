@@ -49,7 +49,7 @@ body {
 }
 
 .button-group button:hover {
-    background-color: #0056b3;
+    background-color: #b528fc;
 }
 
 .links {
@@ -61,11 +61,11 @@ body {
 
 .links a {
     display: block;
-    color: #007BFF;
+    color: #ffffff;
     text-decoration: none;
     margin: 5px 5px;
 }
 
 .links a:hover {
-    text-decoration: underline;
+    text-decoration:solid;
 }
